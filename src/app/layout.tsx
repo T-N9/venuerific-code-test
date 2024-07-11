@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { inter } from "@/fonts/fonts";
 
 import "./globals.css";
+import Navigation from "./components/navigation";
 
 
 
@@ -18,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navigation/>
+        {children}
+      </body>
     </html>
   );
 }
