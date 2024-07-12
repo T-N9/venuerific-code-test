@@ -20,7 +20,7 @@ const IntroSection = () => {
                             </p>
                         </div>
                         <div className="flex-1">
-                            <Image className="w-[280px] mx-auto h-[350px] lg:h-[309px] object-cover object-top" src={"/assets/management_mockup.png"} alt="Venue Management Mock Up" width={280} height={314} />
+                            <Image className="w-[280px] mx-auto h-[350px] lg:w-auto lg:h-[309px] object-cover object-top" src={"/assets/management_mockup.png"} alt="Venue Management Mock Up" width={280} height={314} />
                         </div>
                     </div>
                     <div className="bg-[#EAECFF] flex-[3] space-y-9 rounded-3xl px-9 py-12">
