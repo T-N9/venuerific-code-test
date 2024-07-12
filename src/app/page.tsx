@@ -1,7 +1,9 @@
+import HeroSection from "./components/hero-section";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="text-dark">
+      <HeroSection/>
     </main>
   );
 }
