@@ -29,7 +29,7 @@ const VenueCard = ({ id,
                         <SuperVenueIcon />
                     </div>
                 }
-                <Image className='w-[334px] h:[260px] lg:w-[306px] lg:h-[182px] rounded-lg object-cover object-center' width={306} height={182} alt={name} src={image} />
+                <Image className='w-[334px] h:[260px] lg:w-[306px] bg-gray-300 lg:h-[182px] rounded-lg object-cover object-center' width={306} height={182} alt={name} src={image}  />
 
                 <div className='absolute bottom-3 left-0 right-0 px-4 text-white flex justify-between items-center'>
                     <div className='flex gap-5'>
@@ -59,11 +59,11 @@ const VenueCard = ({ id,
                     </div>
                 </div>
             </div>
-            <div className='border-2 flex bg-white justify-between flex-col p-4 rounded-br-xl rounded-bl-xl -mt-3 lg:w-[306px] w-[334px] min-h-44'>
+            <div className='border-2 flex bg-white justify-between flex-col p-4 pt-6 rounded-br-xl rounded-bl-xl -mt-3 lg:w-[306px] w-[334px] min-h-44'>
                 <div className='flex justify-between'>
                     <div className='flex flex-col gap-1'>
                         <h1 className='font-semibold text-base'>{name}</h1>
-                        <p className='text-sm font-medium'>{keyword}</p>
+                        <p className='text-sm font-medium line-clamp-1'>{keyword}</p>
                         <span className='flex gap-1 justify-start items-center'>
                             <LocationIcon />
                             <span className='text-sm font-medium text-secondary'>{address}</span>
