@@ -7,11 +7,11 @@ import VenueCard from '../common/cards/venue-card'
 import Button from '../common/button'
 import SaveIcon from '../icons/SaveIcon'
 import { montserrat } from '@/fonts/fonts'
+import LoadingVenueCard from '../common/cards/loading-venue-card'
 
 const JoinVenueSection = () => {
 
     const { data, error, isLoading } = useVenueData();
-    console.log({ data });
 
     return (
         <section>
@@ -21,7 +21,12 @@ const JoinVenueSection = () => {
 
                 <div className='grid gap-y-8 gap-3 my-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
 
-                    {isLoading && <div>Loading...</div>}
+                    {isLoading && <>
+                        <LoadingVenueCard />
+                        <LoadingVenueCard />
+                        <LoadingVenueCard />
+                        <LoadingVenueCard />
+                    </>}
                     {error && <div>Error loading data</div>}
                     {
                         data && data?.map((venue) => {
