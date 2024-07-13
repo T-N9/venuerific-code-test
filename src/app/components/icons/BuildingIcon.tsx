@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { SVGProps } from 'react'
 
-const BuildingIcon = () => {
+const BuildingIcon = (props : SVGProps<SVGSVGElement>) => {
     return (
         <svg
-            xmlns="http://www.w3.org/2000/svg"
             width="15"
             height="15"
             fill="none"
             viewBox="0 0 15 15"
+            {...props}
         >
             <g
-                fill="#179BD6"
+                fill={props.fill || '#179BD6'}
                 fillRule="evenodd"
                 clipPath="url(#clip0_1_4427)"
                 clipRule="evenodd"
@@ -20,15 +20,6 @@ const BuildingIcon = () => {
                 <path d="M7.986 14.203a1.017 1.017 0 01-.098-.438V7.348c0-.563.458-1.02 1.021-1.02h1.458V4.14a.437.437 0 00-.169-.345L7.573 1.753a.437.437 0 00-.705.345v11.667c0 .242.196.438.437.438h.681z"></path>
                 <path d="M12.7 7.348a.438.438 0 00-.437-.437H8.91a.438.438 0 00-.437.437v6.417c0 .242.196.438.437.438h3.354a.438.438 0 00.438-.438V7.348zm-1.822 3.646h-.583a.438.438 0 000 .875h.583a.438.438 0 000-.875zm0-2.042h-.583a.438.438 0 000 .875h.583a.438.438 0 000-.875z"></path>
             </g>
-            <defs>
-                <clipPath id="clip0_1_4427">
-                    <path
-                        fill="#fff"
-                        d="M0 0H14V14H0z"
-                        transform="translate(.16 .932)"
-                    ></path>
-                </clipPath>
-            </defs>
         </svg>
     )
 }
