@@ -1,3 +1,5 @@
+/* Sections */
+import Footer from "./components/footer";
 import HeroSection from "./components/hero-section";
 import IntroSection from "./components/intro-section";
 import JoinVenueSection from "./components/join-venue-section";
@@ -9,6 +11,7 @@ export default function Home() {
       <HeroSection/>
       <IntroSection/>
       <JoinVenueSection/>
+      <Footer/>
     </main>
   );
 }
