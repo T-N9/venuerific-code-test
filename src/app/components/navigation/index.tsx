@@ -16,7 +16,7 @@ const Navigation: React.FC = () => {
           <ol className='hidden md:block'>
 
             <li className='text-secondary font-medium hover:text-primary'>
-              <Link href={'/learn'}>
+              <Link href={'/'}>
                 Learn
               </Link>
             </li>
