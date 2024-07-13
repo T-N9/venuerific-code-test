@@ -1,5 +1,6 @@
 import Image from "next/image"
 import ShieldMarkIcon from "../icons/ShieldMarkIcon"
+import ElementPopUp from "../animations/ElementPopUp"
 
 const IntroSection = () => {
     return (
@@ -20,7 +21,9 @@ const IntroSection = () => {
                             </p>
                         </div>
                         <div className="flex-1">
-                            <Image className="w-[280px] mx-auto h-[350px] lg:w-auto lg:h-[309px] object-cover object-top" src={"/assets/management_mockup.png"} alt="Venue Management Mock Up" width={280} height={314} />
+                            <ElementPopUp delay={0.3}>
+                                <Image className="w-[280px] mx-auto h-[350px] lg:w-auto lg:h-[309px] object-cover object-top" src={"/assets/management_mockup.png"} alt="Venue Management Mock Up" width={280} height={314} />
+                            </ElementPopUp>
                         </div>
                     </div>
                     <div className="bg-[#EAECFF] flex-[3] space-y-9 rounded-3xl px-9 py-12">
