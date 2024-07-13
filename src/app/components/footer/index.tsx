@@ -19,11 +19,11 @@ import Image from 'next/image'
 const Footer = () => {
     return (
         <footer className={`${montserrat.className} my-16 text-[#868686]`}>
-            <div className='container max-w-[1280px] mx-auto'>
+            <div className='container max-w-[1280px] md:px-8 mx-auto'>
                 <MailSubscribe />
 
                 <div className='flex flex-wrap flex-col md:flex-row gap-8 py-10 border-b-2'>
-                    <div className='flex px-5 items-center md:items-start flex-col flex-[4] gap-5'>
+                    <div className='flex items-center md:items-start flex-col flex-[4] gap-5'>
                         <Logo width={150} height={35} />
                         <p className='hidden md:block font-medium text-sm w-[88%]'>
                             Since 2013, Venuerific has been helping people celebrate their personal and business events by connecting them to unique event venues in Singapore, Malaysia, Hong Kong, Philippines, and Indonesia.

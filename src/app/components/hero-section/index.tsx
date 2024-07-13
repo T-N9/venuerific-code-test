@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import ElementPopUp from '../animations/ElementPopUp'
 
 const HeroSection = () => {
     return (
@@ -26,9 +27,13 @@ const HeroSection = () => {
 
                 </div>
                 <div className='flex-1 relative'>
-                    <Image quality={100} className='absolute hidden lg:block z-10 bottom-0 left-[0.65rem]' src={'/assets/hero_mockup.png'} alt='Venuerific App Mock Up' width={320} height={520} />
+                    <ElementPopUp className='absolute bottom-0 left-[0.65rem] hidden lg:block z-10'>
+                        <Image quality={100} className='  ' src={'/assets/hero_mockup.png'} alt='Venuerific App Mock Up' width={320} height={520} />
+                    </ElementPopUp>
 
-                    <Image quality={100} className='lg:hidden w-[284px] mx-auto h-[356px] object-cover object-top z-10 bottom-0 left-8' src={'/assets/hero_mockup.png'} alt='Venuerific App Mock Up' width={284} height={356} />
+                    <ElementPopUp>
+                        <Image quality={100} className='lg:hidden w-[284px] mx-auto h-[356px] object-cover object-top z-10 bottom-0 left-8' src={'/assets/hero_mockup.png'} alt='Venuerific App Mock Up' width={284} height={356} />
+                    </ElementPopUp>
                 </div>
             </div>
         </section>
