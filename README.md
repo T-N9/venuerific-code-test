@@ -72,15 +72,3 @@ The project is deployed on Vercel and can be accessed at:
 The Storybook instance is deployed on Netlify and can be accessed at:
 
 [Venuerific Code Test Storybook](https://venuerific-code-test-storybook.netlify.app/)
-
-
-
-## Deployment on Vercel
-
-https://venuerific-code-test.vercel.app/
-
-
-
-## Storybook
-
-https://venuerific-code-test-storybook.netlify.app/
