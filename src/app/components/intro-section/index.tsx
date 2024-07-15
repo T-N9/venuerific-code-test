@@ -10,9 +10,9 @@ const IntroSection = () => {
                 <p className='text-secondary text-center text-xl mt-5'>Manage your venue with ease</p>
 
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between mt-16">
-                    <div className='flex flex-col lg:flex-row flex-[7] justify-between space-y-12 lg:space-y-0 bg-[#DFF4FF] rounded-3xl p-12 pb-0'>
+                    <div className='flex flex-col lg:flex-row flex-[7] justify-between space-y-12 lg:space-y-0 bg-[#DFF4FF] rounded-3xl md:p-12 pt-12 !pb-0'>
 
-                        <div className="flex-1 text-center lg:text-left space-y-3">
+                        <div className="flex-1 text-center lg:text-left px-4 lg:px-0 space-y-3">
                             <h2 className='text-3xl font-semibold'>
                                 Manage your venue anywhere
                             </h2>
@@ -27,10 +27,10 @@ const IntroSection = () => {
                         </div>
                     </div>
                     <div className="bg-[#EAECFF] flex-[3] space-y-9 rounded-3xl px-9 py-12">
-                        <div className="bg-[#2D38A810] rounded-full w-[96px] h-[96px] flex justify-center items-center">
+                        <div className="bg-[#2D38A810] rounded-full mx-auto lg:mx-0 w-[96px] h-[96px] flex justify-center items-center">
                             <ShieldMarkIcon />
                         </div>
-                        <div className="space-y-3">
+                        <div className="space-y-3 lg:text-left text-center">
                             <h2 className="font-semibold text-3xl">
                                 Easy to access
                             </h2>
