@@ -1,8 +1,12 @@
 import { montserrat } from '@/fonts/fonts'
-import React from 'react'
+import React from 'react';
+
+import Image from 'next/image'
 
 /* Components */
 import MailSubscribe from '../mail-subscribe'
+
+/* Icons */
 import Logo from '../common/logo'
 import MailIcon from '../icons/MailIcon'
 import FacebookIcon from '../icons/FacebookIcon'
@@ -14,7 +18,7 @@ import BloggerIcon from '../icons/BloggerIcon'
 import PhoneIcon from '../icons/PhoneIcon'
 import MailSmIcon from '../icons/MailSmIcon'
 import LocationSmIcon from '../icons/LocationSmIcon'
-import Image from 'next/image'
+
 
 const Footer = () => {
     return (
@@ -109,8 +113,8 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        <div className='flex-1 text-center md:text-left'>
-                            <h1 className='font-bold text-sm text-gray-800 md:text-inherit md:text-2xl mb-3'>Office</h1>
+                        <div className='flex-1  md:text-left'>
+                            <h1 className='font-bold text-center text-sm text-gray-800 md:text-inherit md:text-2xl mb-3'>Office</h1>
                             <ul className='flex flex-wrap gap-4 text-sm'>
                                 <li><a aria-label='Dial phone' className='flex items-start gap-2' href="tel:+6569558770"><PhoneIcon /> +65 6955 8770</a> </li>
                                 <li><a aria-label='Mail to Venuerific' className='flex items-start gap-2' href="mailto:info@venuerific.com"><MailSmIcon />info@venuerific.com</a></li>
